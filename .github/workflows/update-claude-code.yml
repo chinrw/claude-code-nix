@@ -2,7 +2,7 @@ name: Update Claude Code Version
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Run every hour
+    - cron: '23 * * * *'  # Hourly at :23 — offset off the top of the hour, which GitHub drops/delays under peak load
   workflow_dispatch:  # Allow manual trigger
 
 permissions:
